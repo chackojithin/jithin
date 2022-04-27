@@ -1,0 +1,16 @@
+.div{
+    width: 900px;
+   
+}
+@media screen and (max-width:800px){
+    .div{
+        width: 600px;
+        background-color: yellowgreen;
+    }
+}
+@media screen and (max-width:600px){
+    .div{
+        width: 550px;
+        background-color: rgb(205, 50, 166);
+    }
+}

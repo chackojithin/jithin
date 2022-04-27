@@ -1,0 +1,39 @@
+h1{
+    color:red;
+    background-color: aqua;
+}
+button{
+    color: white;
+    background-color: green;
+}
+#hello{
+    color: brown;
+}
+#hai{
+    color: blue;
+}
+.jithin{
+    color: blue;
+    background-color: yellow;
+}
+.outerdiv{
+    color: white;
+    width: 345px;
+    height: 223px;
+    background-color: #3e2788;
+    margin-left: 20px;
+    margin-top: 41px;
+    padding-top: 10px;
+    padding-left: 10px;
+    border: 5px solid;
+    border-color: #f21048;
+}
+.innerdiv{
+    width: 285px;
+    height: 150px;
+    background-color: #883827;
+    margin-left: 20px;
+    margin-top: 41px;
+    
+
+}

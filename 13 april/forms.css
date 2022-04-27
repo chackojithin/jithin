@@ -1,0 +1,36 @@
+input[type=text],select{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    border: 1px solid red;
+    border-radius: 4px;
+    box-sizing: border-box; 
+    background-color:lightblue;
+   
+}
+/* select{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box; 
+} */
+input[type=submit]{
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    color: white;
+    background-color: green;
+    cursor: pointer;
+    border-radius: 4px;
+   
+} 
+input[type=submit]:hover{
+    opacity: 0.8;
+}
+form{
+    border-radius: 5px;
+    background-color: rgb(168, 148, 148);
+    padding: 20px;
+}

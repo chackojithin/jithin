@@ -1,0 +1,26 @@
+/*@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;700&display=swap');*/
+table{
+    width: 100%;
+    border: 1px solid #ddd;
+    border-radius: 1em;
+    border-spacing: 0;
+    overflow: hidden;
+}
+th{
+    background-color: #215a85;
+    color: white;
+    text-align: left;
+    padding: 1em;
+    text-transform: uppercase;
+
+}
+td{
+    padding:1em;
+}
+tr:nth-child(even){
+    background-color: #ddd;
+}
+body{
+    padding: 1.25em;
+    font-family: "poppins";
+}

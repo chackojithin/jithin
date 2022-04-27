@@ -1,0 +1,23 @@
+
+.table{
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.thead{
+    height: 10%;
+}
+.tbody{
+    height: 5%;
+}
+.th{
+    height: 30%;
+}
+tr:hover{
+    background-color: blueviolet;
+}
+tr:nth-child(even){
+    background-color:grey;
+}tr:first-child{
+    background-color: rgb(102, 255, 0);
+}

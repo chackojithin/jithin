@@ -1,0 +1,14 @@
+.bgm-text{
+    color: yellow;
+    background-color: black;
+}
+.bg-image{
+    background-image: url(Image/geometric-black-and-gold-background-free-vector.jpg);
+    width: 1100px;
+    height: 1100px;
+    color: white;
+    
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+}

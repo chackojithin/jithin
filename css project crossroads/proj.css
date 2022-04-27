@@ -1,0 +1,69 @@
+.header{
+    background-color: #3b5998;
+    width: 100%;
+    height: 100px;
+}
+body{
+    margin: 0;
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+}
+.logo{
+    padding-top: 46px;
+    width: 50%;
+    float: left;
+}
+.login{
+    width: 50%;
+    float: right;
+    padding-top: 18px;
+
+}
+.logo-a{
+    color: white;
+    font-size: 37px;
+    text-decoration: none;
+    font-weight: bold;
+    margin-left: 157px;
+    margin-top: 20px;
+  
+}
+.td{
+    color: white;
+}
+.login-a{
+    margin-left: 180px;
+}
+.td1{
+    text-decoration: none;
+   
+    color: #9cb4d8;
+    font-size: 14px;
+}
+.button{
+    color: white;
+    background-color: #4267b2;
+    border-color: #29489d;
+   
+    
+}
+.leftcontent{
+    width: 50%;
+    float: left;
+    padding-left: 112px;
+}
+.rightcontent{
+    width: 50%;
+    float: right;
+}
+.content{
+    background: linear-gradient(white, #D3D8E8);
+    width: 100%;
+    height: 500px;
+}
+.img{
+    width: 737px;
+}
+.para{
+    font-size: 30px;
+    font-weight: bold;
+}
