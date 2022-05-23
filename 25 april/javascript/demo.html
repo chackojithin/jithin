@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        #Screen{
+            width: 200px;
+            height: 200px;
+            border: solid 1px;
+        }
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="inp">
+    <button onclick="display()">click me</button>
+    <h1 id="btn-head"></h1>
+
+    <script>
+        function display(){
+            var text=document.getElementById("inp").value
+            document.getElementById("btn-head").innerHTML=text
+            // alert(text)
+            if(text=="crossroads"){
+                alert("You are great")
+            }
+
+        }
+    </script>
+
+    <div id="Screen"> 
+    </div>
+        <button onclick="color('red')">Red</button>
+        <button onclick="color('orange')">Orange</button>
+        <button onclick="color('yellow')">Yellow</button>
+        <button onclick="color('green')">Green</button>
+
+    <script>
+        function color(col){
+            document.getElementById("Screen").style.background=col
+        }
+    </script>
+</body>
+</html>
