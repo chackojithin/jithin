@@ -10,10 +10,10 @@ var k=5
 if(k>3){
     var jit="hey there"
     console.log(jit)
-    var ponn="good"
+    var hello="good"
 }
 console.log(jit)
-console.log(ponn)
+console.log(hello)
 console.log("-------------------")
 
 let kir="hai"
