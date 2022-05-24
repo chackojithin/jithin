@@ -25,3 +25,12 @@ if(mul>3){
     console.log(hello)
 }
 console.log(kir)
+
+console.log("------------------")
+
+{
+    var kiran="Everything is fine"
+    console.log(kiran)
+}
+console.log(kiran)
+
