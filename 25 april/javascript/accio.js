@@ -33,4 +33,8 @@ console.log("------------------")
     console.log(kiran)
 }
 console.log(kiran)
-
+console.log("------------------")
+console.log("jithin is a goood boy")
+var lol="america";
+console.log(lol);
+document.write("jithin chacko payyanattu house");

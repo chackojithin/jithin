@@ -1,6 +1,8 @@
 function btnclick(val){
     // console.log("working")
-      document.getElementById("screen").value = document.getElementById("screen").value+val
+    //   document.getElementById("screen").value = document.getElementById("screen").value+val
+    document.getElementById("screen").value +=val
+   
 }
 function cleardisplay(){
     document.getElementById("screen").value=" "
