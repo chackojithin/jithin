@@ -1,5 +1,4 @@
 console.log("Script 1")
-
 document.getElementById("root").innerHTML="<h2>Hey there,This is jithin chacko speaking</h2>"
 document.write("Hey,Whats up?")
 document.getElementById("root2").innerHTML="<h2>Hello</h2>"
@@ -21,11 +20,11 @@ let mul=5;
 if(mul>3){
     let kir="Hai this is kiran"
     console.log(kir)
-    let hello="jithin"
-    console.log(hello)
+    let helo="jithin"
+    console.log(helo)
 }
 console.log(kir)
-
+// console.log(helo)
 console.log("------------------")
 
 {

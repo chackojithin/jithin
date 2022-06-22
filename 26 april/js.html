@@ -15,7 +15,43 @@
        console.log(arr)
        arr.name="arun"
        console.log(arr)
+       var name=prompt("Enter your name")
+       let abc=13+7+"hey";
+       let abc2="hey"+30+10;
+       console.log(abc2);
+       console.log(abc) 
        
+       const person={
+             firstname:"jithin",
+             lastname:"chacko",
+             age:34,
+             phonenumber:[81569095370,9605255705],
+             address: {
+                 houseNo:12,
+                 street:"mandalam",
+                 city:"kannur",
+                 pin:952415
+             }
+       }
+       console.log(person)
+
+       function tocelsious(farenheit){
+           return (5/9)*(farenheit-39);
+       }
+       let x=tocelsious(99)
+       document.write("The teperature is"+x+"deg celsius")
+
+       const Person={
+           Name:"Thomas",
+           lastname:"Ps",
+           fullName:function(){
+               return this.Name+" "+this.lastname;
+           }
+ 
+       }
+       console.log(Person)
+       console.log(Person.fullName)
+       console.log(Person.fullName())
    </script>
 </body>
 

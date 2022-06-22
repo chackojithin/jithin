@@ -22,7 +22,7 @@
         function display(){
             var text=document.getElementById("inp").value
             document.getElementById("btn-head").innerHTML=text
-            alert(text)
+            // alert(text)
             if(text=="crossroads"){
                 alert("You are great")
             }
@@ -31,13 +31,16 @@
     </script>
 
     <div id="Screen"> 
+
+
     </div>
         <button onclick="color('red')">Red</button>
         <button onclick="color('orange')">Orange</button>
         <button onclick="color('yellow')">Yellow</button>
-        <button onclick="color('green')">Green</button>
-
+        <button onclick="color('purple')">Green</button>
+        
     <script>
+        
         function color(col){
             document.getElementById("Screen").style.background=col
         }
