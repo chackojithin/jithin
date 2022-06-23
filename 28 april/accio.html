@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const obj1={a:'1',b:5}
+        const obj2=obj1;
+        console.log(obj1===obj2) //true;
+        const obj3={a:'1',b:5}
+        console.log(obj1===obj3) //false;
+
+        let str="Rohan, Banana, Dutt"
+        let part=str.slice(7,13)
+        console.log(part)
+        part=str.slice(7)
+        console.log(part)
+        part=str.slice(-12,-6)
+        console.log(part)
+        part=str.slice(-12);
+        console.log(part)
+        part=str.slice(-6,-12);
+        console.log(part)  //Nothing will give
+        
+
+        part =str.substring(7,13)
+        console.log(part)
+        part=str.substring(-7)  //invalid (this may give all answer)
+        console.log(part)
+        
+
+        part=str.substr(7,6)
+        console.log(part)
+        part=str.substr(7)
+        console.log(part)
+        part=str.substr(-4)
+        console.log(part)
+
+        let repText="Please be here"
+        let newText=repText.replace("here","in place")
+        console.log(newText)
+
+        let repText2="Please be here here"
+        let newText2=repText2.replace("here","in place")
+        console.log(newText2)
+
+        let repText3="Please be here here"
+        let newText3=repText3.replace(/here/g,"in place")
+        console.log(newText3)
+
+        let repText4="Please be here HERE"
+        let newText4=repText4.replace(/here/gi,"in place")
+        console.log(newText4)
+
+        console.log("--------------")
+
+        let kk="jithin"
+        let conc=kk.concat(" "+"chacko")
+        console.log(conc)
+
+        let concc="jinto".concat(" "+"sebastian")
+        console.log(concc)
+
+        let conccc="jinto".concat(" dgsdfgsfg"+" dgsdfgsfg"+"  sebastian")
+        console.log(conccc)
+
+        let t2="5"
+        let padded=t2.padStart(5,"x")
+        console.log(padded)
+       
+        let t3="5"
+        let paddd=t3.padEnd(5,"x")
+        console.log(paddd)
+
+        let namestatement="hey my name is jithin"
+        let name=namestatement.split("")
+        console.log(name)
+        
+        let namestatement1="hey my name is jithin"
+        let name1=namestatement1.split(" ")
+        console.log(name1)
+
+        let namestatement12="hey my name is jithin"
+        let name12=namestatement12.split()
+        console.log(name12)
+    </script>
+</body>
+</html>
