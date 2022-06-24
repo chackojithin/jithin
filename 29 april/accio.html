@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="par">
+
+    </p>
+    <script>
+        const cars=["ferrari","jeep","volvo"]
+        console.log(typeof(cars))
+        console.log(cars)
+        const cars1=[]
+        cars1[0]="auto"
+        cars1[1]="pickup"
+        cars1[2]="benz"
+        console.log(cars1)
+        let car=cars[2]
+        console.log(car)
+        document.getElementById("par").innerHTML=cars
+        console.log(typeof(cars))
+        const car2=["ferrari",123,"jithin",{name:"arun",age:12}]
+        console.log(car2)
+        console.log(car2.length)
+        console.log(typeof(car2))
+        
+        var text=""
+        for(let i=0;i<cars.length;i++){
+            text+=cars[i]+"<br>"
+        }
+        document.getElementById("par").innerHTML=text
+
+       console.log("----")
+        var person={
+            name:"jithin",
+            age:23,
+            place:"Banglore"
+
+        }
+        for(let x in person){
+            // console.log(x)
+            // console.log(x)
+
+            // console.log(person[x])
+            console.log(x,person[x])
+        }
+
+        const numbers=[3,4,6,7,89,99]
+        // console.log(numbers)
+        let txt=""
+        let txt1=""
+        numbers.forEach(myFunc)
+
+        function myFunc(value,index,array){
+            txt+=array+ ",";
+            txt1+=index+",";
+        }
+        console.log(txt)
+        console.log(txt1)
+
+        let txt2=""
+        numbers.forEach(myFunc)
+
+        function myFunc(value,index,array){
+            if(index>0){
+                const newValue=value+array[index-1]
+                txt2+=newValue+","
+            }
+      
+        
+        }
+      
+        console.log(txt2)
+    </script>
+</body>
+</html>
