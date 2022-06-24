@@ -7,6 +7,9 @@
     <title>Document</title>
 </head>
 <body>
+    <div id="div">
+
+    </div>
     <script>
         const obj1={a:'1',b:5}
         const obj2=obj1;
@@ -87,6 +90,40 @@
         let namestatement12="hey my name is jithin"
         let name12=namestatement12.split()
         console.log(name12)
+
+        //template literal ` `
+
+        let n=`this is "jithin" `
+        console.log(n);
+       
+        let n1=`this is "jithin" 
+        jfidj
+        jdfjfiosfjsdfjsdfsfs`
+        console.log(n1);
+
+        let n3="jithin"
+        let n2="chacko";
+        console.log(n3+" "+n2);
+        console.log(`${n3} ${n2}`) //variable substitution
+        
+
+        let heading="This is heading"
+        let content="This is content"
+        document.getElementById("div").innerHTML=`<h2>${heading}</h2>
+        <p>${content}</p>`
+
+        
+       console.log("--------")
+
+      
+       console.log(Number(4))
+       console.log(Number("jithin"))
+       console.log(Number())
+       let nn=12.4567;
+       console.log(nn.toPrecision(5))
+       console.log(nn.toFixed(3))
+       console.log(parseInt(nn))
+       console.log(parseFloat(nn))
     </script>
 </body>
 </html>
