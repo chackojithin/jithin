@@ -21,7 +21,7 @@
         console.log(cars1)
         let car=cars[2]
         console.log(car)
-        document.getElementById("par").innerHTML=cars
+        // document.getElementById("par").innerHTML=cars
         console.log(typeof(cars))
         const car2=["ferrari",123,"jithin",{name:"arun",age:12}]
         console.log(car2)
@@ -32,7 +32,7 @@
         for(let i=0;i<cars.length;i++){
             text+=cars[i]+"<br>"
         }
-        document.getElementById("par").innerHTML=text
+        // document.getElementById("par").innerHTML=text
 
        console.log("----")
         var person={
@@ -61,20 +61,169 @@
         }
         console.log(txt)
         console.log(txt1)
+        
 
-        let txt2=""
-        numbers.forEach(myFunc)
+        const num=[3,4,6,7,89,99]
+        let tx2=""
+        num.forEach(myFunc1)
 
-        function myFunc(value,index,array){
+        function myFunc1(value,index,array){
             if(index>0){
                 const newValue=value+array[index-1]
-                txt2+=newValue+","
+                tx2+=newValue+","
             }
-      
-        
         }
-      
-        console.log(txt2)
+       console.log(tx2)
+
+       const num1=[10,20,30,40,50,60,70,80,90,100]
+       let textNum=""
+       num1.forEach(newFunc)
+       function newFunc(value,index){
+          textNum+=`10 * ${index+1} = ${num1[index]} <br>`
+       }
+    //    console.log(textNum)
+       document.getElementById("par").innerHTML=textNum;
+       
+    //    const arr1=[10,20,30,40,50,60,70,80,90,100]
+    //    for(var i=0;i<10;i++){
+    //       document.getElementById("par").innerHTML+="10 x "+ (i+1) +"  =  " + arr1[i] + "<br>";
+    //    }
+  
+
+
+    //    const num2=[10,20,30,40,50,60,70,80,90,100]
+    //    let textNum2=""
+    //    num2.forEach(newFunc2)
+    //    function newFunc2(value,index){
+    //     textNum2=`10 * ${index+1} = ${num2[index]} <br>`
+       
+    //     document.getElementById("par").innerHTML +=textNum2;
+    //    }
+
+
+    
+    //   const num2=[10,20,30,40,50,60,70,80,90,100]
+    //     let textNum2=""
+    //     num2.forEach(newFunc2)
+    //     function newFunc2(value,index){
+    //         textNum2="10 * "+ (index+1) +"=" + num2[index] + "<br>"
+    //         document.getElementById("par").innerHTML +=textNum2;
+
+    //     }
+       
+
+    const fruits=["kiwi","mango","pappaya"]
+    fruits.push("orange")   
+    console.log(fruits)
+
+    fruits[9]="apple"
+    console.log(fruits)  //this create a hole in array
+    
+
+    const point=new Array("jithin","arun",123,"jinto",123.54)
+    console.log(point)
+    console.log(point[3])
+
+    const point2=[]
+    point2[0]="jithin"
+    point2[1]="kannur"
+    point2[2]="banglore"
+    console.log(point2 )
+
+    const point3=new Array(40)
+    console.log(point3)  //so avoid this method
+
+   
+    console.log( Array.isArray(fruits))
+    console.log(point instanceof Array) 
+
+    console.log(fruits.toString());
+    console.log(fruits.join(":"));
+
+    console.log(fruits.pop())
+    console.log(fruits.pop())
+   
+    console.log(fruits.shift());
+    console.log(fruits)
+    console.log(fruits.unshift("newOne"));  //returns new length
+    console.log(fruits)
+    delete fruits[2] //leave holes in the arr so use pop or shift
+    console.log(fruits)
+
+    const app1=["a","b"]
+    const app2=["c","d"]
+    const app3=app1.concat(app2,app1,app2)
+    console.log(app3)
+    
+    const eg=["Banana","apple","orange","kiwi"]
+    eg.splice(2,0,"mang0","pappaya")
+    console.log(eg)
+    eg.splice(3,2)
+    console.log(eg)
+    eg.splice(1)
+    console.log(eg)
+
+    const eg2=["Banana","Apple","Orange","Kiwi"]
+    console.log(eg2.sort())
+    console.log(eg2.reverse())  
+
+
+    const nums=[30,45,12,78,43,1,3,90,4,76,8]
+    console.log(nums.sort())
+
+
+    console.log(nums.sort(function(a,b){
+        return a-b
+    }))
+
+    console.log(nums.sort(myFunction))
+    function myFunction(a,b){
+        return b-a
+    }
+
+    function myarray(arr){
+        return Math.max.apply(null,arr)  //this is the way to find max value //he doesnt teach how this line works
+    }
+    console.log(myarray(nums))
+
+    function minArray(arr){
+         return Math.min.apply(null,arr)
+    }
+    console.log(minArray(nums))
+
+    const carobj=[
+        {
+            type:"volvo",
+            year:2023
+        },
+        {
+            type:"bmw",
+            year:2014
+        },
+        {
+            type:"benz",
+            year:2005
+        }
+    ]
+    console.log(carobj.sort(function(a,b){
+        return a.year-b.year
+    })) 
+
+    
+    const num5=[6,8,3,9,7,4]
+    const num6=num5.map(mul)
+    function mul(value,index,array){
+        return value*2;
+    }
+    console.log(num6)
+
+    let over4=num5.filter(mygreat);
+    function mygreat(value,index,array){
+        return value>4
+    }
+    console.log(over4)
     </script>
+
+
 </body>
 </html>
