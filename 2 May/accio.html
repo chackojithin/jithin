@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function splits(array) {
+             const odd=[],even=[]  
+             array.forEach(function(value,index){
+                if(index%2){
+                  odd.push(value)
+                }else{                      //here also not creating new array..odd and even are already given arrays
+                    even.push(value)         //if not provid odd and even array here then it gives error
+                                            //only maps and filter creates new array ..forEach not creating new array
+                }
+             })
+             console.log(odd,even)
+        }
+        const arr = [2,4,5,6,7,8];
+        splits(arr); 
+
+
+    // const arr1=[2,3,5,6,7,8,9]
+    // let numbers=arr1.reduce(myfunc)
+    // function myfunc(total,value,index,array){
+    //     //total=total+value;
+    //      return total+value;
+    // }
+    // console.log(numbers)
+     
+    //==>above solution in other way
+    
+    const arr1=[2,3,5,6,7,9]
+    let numbers=arr1.reduce(function(total,value,index){
+        return total+value;
+    })
+    
+       
+    console.log(numbers)
+
+    let areAll18=arr1.every(function(value){
+        return value>5
+    })
+    console.log(areAll18)
+
+    let someAll18=arr1.some(function(value){
+        return value>5
+    })
+    console.log(someAll18)
+
+    const fruits=["apple","orange","apple","mango"]
+    let indexOforange=fruits.indexOf("orange")  
+    let indexOformango=fruits.indexOf("mango")
+    let indexofapple=fruits.indexOf("apple")
+    let indexofapple2=fruits.lastIndexOf("apple")
+    let indexofkiwi=fruits.indexOf("kiwi")
+
+    console.log(indexOforange,indexOformango,indexofapple,indexofapple2,indexofkiwi)
+
+    console.log(fruits.includes("mango"))
+    console.log(fruits.includes("kiwi"))
+
+    let d=new Date();
+    console.log(d)
+    let d1=new Date("2022-06-30");
+    console.log(d1)
+    d1.getDate();
+
+   let rr=getRandomInteger(10,20)
+   function getRandomInteger(min,max){
+        return Math.floor(Math.random()*(max-min))+min
+    }
+    console.log(rr)
+
+   let rrr=getRandomInteger(10,20)
+   function getRandomInteger(min,max){
+        return Math.floor(Math.random()*(max-min+1))+min   //for including 20 also
+    }
+    console.log(rrr)
+   
+
+    //arrow functions   -->refer w3school also
+
+    let myfunction = () => "Hello world"
+   
+    console.log(myfunction())
+
+    function hello(a,b){
+        return a*b;
+    }
+    let myfunc=hello(2,3)
+    console.log(myfunc);
+    
+
+    let myfunc1= (a,b) => {
+        console.log(a*b);
+    }
+    myfunc1(3,3);
+
+
+    const person12={
+        "firstName":"jithin",
+        "LastName":"chacko",
+         fullName1:function(a,b){
+             return `${this.firstName} lives in ${a} and ${this.LastName} lives in ${b}`
+         }
+    }
+    console.log(person12.fullName1())   //undifined because parameter not passed here;
+
+    const abc={
+        "firstName":"jinto",
+        "LastName":"chacko"
+        
+    }
+    console.log(person12.fullName1.call(abc,"Banglore","Kannur"))
+    console.log(person12.fullName1.apply(abc,["Banglore","Kannur"]))
+
+    console.log(Math.max(1,2,3))
+    const arr4=[3,4,76,89,45,67]
+    // console.log(Math.max(arr4))  wrong ans we wont get ans;
+    console.log(Math.max.apply(null,arr4));
+
+    let hel={
+        firstName:"arun",
+        LastName:"worky"
+    }
+    let full=person12.fullName1.bind(hel)
+    console.log(full("agra","Delhi")) 
+    </script>
+</body>
+</html>
