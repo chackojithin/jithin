@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h4 id="demp">
+         
+    </h4>
+   
+    <script>
+       
+        function myfunc(){
+            console.log("Hello world")
+        }
+        setTimeout(myfunc,5000)
+        
+        setTimeout( ()=> {console.log("this will run after 3s")},3000)
+        
+       
+       function hello(){
+          console.log("jithin")
+       }
+       let kk=setTimeout(hello,4000)
+
+       function stopfunc(){
+          clearTimeout(kk)
+       }
+       stopfunc();
+       
+       let i=0;
+       function hello1(){
+         i++;
+         console.log(i);
+         const timeout=setTimeout(hello1,1000)
+         if(i==5){
+            clearTimeout(timeout);
+         }
+       }
+       setTimeout(hello1,1000);
+       
+       function display(){
+        //   document.getElementById("demp").innerHTML+="Hello"
+          clearInterval(clearint)
+       }
+       var clearint=setInterval(display,1000)
+       
+       //jspromise
+    //    const promiseHello=new Promise(function(resolve,reject){
+    //        setTimeout(()=>resolve("hello"),3000)
+    //     //    setTimeout(()=>reject("promises rejected due to some reasons"),5000)
+    //    })
+    // //    promiseHello.then(value=>{
+    // //       document.getElementById("demp").innerHTML="resolved with " + value;
+    // //    })
+    //   promiseHello.then(function(value){
+    //     document.getElementById("demp").innerHTML="jithin"+value;
+    //       })
+    //       .catch(err=>{
+    //        document.getElementById("demp").innerHTML="rejected with "+err
+    //       })
+
+        const promiseHai=new Promise(function(resolve,reject){
+            //   setTimeout(function(){
+            //      resolve("hello")
+            //   },3000)
+            // setTimeout(()=>resolve("Hello"),3000)
+            setTimeout(()=>reject("This is rejected"),5000)
+        })
+        promiseHai.then
+               (value=>{
+                document.getElementById("demp").innerHTML="resolved "+value
+            })
+               .catch(jithin=>{
+                document.getElementById("demp").innerHTML=jithin
+            })
+
+
+          
+    </script>
+</body>
+</html>

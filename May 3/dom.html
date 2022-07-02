@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <a id="anchor" href="http://google.com">My Link</a>
+    <h1 id="heading">My heading</h1>
+    <p id="intro" class="intro">jihtin</p>
+    <p class="intro">jihtin</p>
+    <p class="intro">jihtin</p>
+    <p class="intro">jihtin</p>
+
+    <script>
+        document.getElementById("anchor").setAttribute("target","_blank")
+        console.log(document.getElementById("anchor").href)
+        document.getElementById("heading").style.color="red"
+
+        const element=document.createElement("div")
+        element.innerHTML="Hey there"
+        document.getElementById("heading").appendChild(element)
+
+        element.innerHTML="Hello this is jithin"
+        document.body.appendChild(element);
+
+
+        const para=document.getElementsByTagName("p")
+        const par1=document.querySelectorAll("p.intro")
+        const par2=document.querySelector("p.intro")
+        console.log(par2)
+    </script>
+</body>
+</html>
