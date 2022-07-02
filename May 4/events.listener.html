@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demp"></p>
+    <button id="btn">Show Date</button>
+    <button id="btn2">Stop updating</button>
+         
+    <script>
+       const button=document.getElementById("btn")
+       const Myfunc=()=>{
+         document.getElementById("demp").innerHTML=`todays Date and time is ${new Date()}`
+       }
+       button.addEventListener("click",Myfunc)
+       
+    //    setInterval(Myfunc,1000)
+      const Stopbtn=document.getElementById("btn2");
+      Stopbtn.addEventListener("click",()=>{
+         button.removeEventListener("click",Myfunc)
+      })
+     
+        
+    </script>
+</body>
+</html>
