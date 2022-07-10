@@ -14,6 +14,25 @@
     <p class="intro">jihtin</p>
     <p class="intro">jihtin</p>
 
+    <input type="text"  name="text">
+    <input type="button" value="button"  onclick="myfunc()">
+    <h1 id="demp"></h1>
+
+    <h3>fff </h3>
+    <h3> fdsfsdf</h3>
+    <h3>fsdfdf </h3>
+    <h3> fdsfdff</h3>
+    <h3> fdsfdfdf</h3>
+
+    <h2 name="kakka"></h2>
+
+    <input type="button" value="button"  onclick="myfunc1()">
+    <h1 id="dem"></h1>
+
+    <input type="button" value="create"  onclick="create()">
+    <input type="button" value="delete"  onclick="remove()">
+    
+
     <script>
         document.getElementById("anchor").setAttribute("target","_blank")
         console.log(document.getElementById("anchor").href)
@@ -31,6 +50,45 @@
         const par1=document.querySelectorAll("p.intro")
         const par2=document.querySelector("p.intro")
         console.log(par2)
+        
+        var a=document.getElementsByName("text")[0]
+        var b=document.getElementById("demp")
+
+        function myfunc(){
+            b.innerHTML="HEllo"+a.value;
+            b.style.color="green"
+        }
+
+        var ab=document.getElementsByTagName("h3")
+        ab[0].innerHTML="jithin"
+        ab[1].innerHTML="jithin"
+        ab[2].style.color="orange"
+        ab[3].style.color="red"
+        ab[4].style.color="green"
+
+        var abc=document.getElementsByName("kakka")
+        abc[0].innerHTML="Everthing will be fine soon"
+        abc[0].style.color="purple"
+
+       
+        var c=document.getElementById("dem")
+        function myfunc1(){
+            c.innerHTML="arun worky"
+        }
+
+
+        var heading=document.createElement("h2")
+        function create(){
+            heading.innerHTML="Hello world"
+            document.body.appendChild(heading);
+        }
+
+        // var heading1=document.createElement("h1")
+        // heading1.innerHTML="haahahaha"
+        // document.body.appendChild(heading1)
+       function remove(){
+          heading.remove();
+       }
     </script>
 </body>
 </html>

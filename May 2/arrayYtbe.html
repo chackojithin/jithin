@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="kk"></h1>
+    <ul id="temp">
+        <li class="demp">Jithin</li>
+        <li class="demp">jinto</li>
+        <li class="demp">alen</li>
+        <li class="demp">ajmal</li>
+    </ul>
+
+    <input type="button" value="click me" id="btn1">
+    <input type="button" value="change color" id="btn2">
+    <h1 id="demo"></h1>
+    <script>
+        var arr=["apple","orange","mango","kiwi"]
+       
+        // head[0].innerText=arr[0]
+        // head[1].innerText=arr[1]
+        // head[2].innerText=arr[2]
+        // head[3].innerText=arr[3]
+
+        // for(let fruits of arr){
+        //     let li=document.createElement("li")
+        //     li.innerHTML=fruits;
+        //     document.getElementById("temp").appendChild(li)
+        //     //document.body.appendChild(li)
+        // }
+
+        // arr.forEach(fruits=>{
+        //     let li=document.createElement("li")
+        //     li.innerHTML=fruits;
+        //     document.getElementById("temp").appendChild(li)
+        // })
+         let arr2=[]
+         let Allelements=document.querySelectorAll(".demp")
+        Allelements.forEach(function(values){
+            // console.log(values.innerText)
+            let newElemets=values.innerText;
+            arr2.push(newElemets);
+        })
+        console.log(arr2)
+
+        var arr5=["apple","orange","mango","kiwi"]
+        for(let x of arr5){
+            document.getElementById("kk").innerHTML=x;
+        }
+
+        var btn1=document.getElementById("btn1")
+        var btn2=document.getElementById("btn2")
+        var temp=document.getElementById("demo")
+        btn1.addEventListener("click",()=>{
+            temp.innerHTML="jithin chako"
+        })
+        btn2.addEventListener("click" ,func1)
+        function func1(){
+            temp.style.color="green"
+        }
+       
+    </script>
+</body>
+</html>

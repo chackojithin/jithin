@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="dem" style="color: red;"></h1>
+    <script>
+        
+    // let promiseHello=new Promise((resolve,reject)=>{
+    //     setTimeout(()=>resolve("Hello"),1000)
+    //     setTimeout(()=>reject("This is rejected"),1000)
+    //  }) 
+     
+    //  promiseHello
+    //     .then(value=>{
+    //         document.getElementById("dem").innerHTML="resolve by " + value; 
+    //     })
+    //     .catch(err=>{
+    //         document.getElementById("dem").innerHTML=err
+    //     })
+
+
+    //     async function myfunc(){
+    //      let myPromise=new Promise((resolve,reject)=>{
+    //         // setTimeout(()=>resolve("This is resolved again"),2000)
+    //         setTimeout(()=>reject("This is rejected again"),2000)
+    //     })
+    //     let promiseHai=await myPromise
+    //     document.getElementById("dem").innerHTML=promiseHai   //this await is only work for resolve for reject we have to use try catch;
+    // }
+    // myfunc()
+
+         async function myfunc(){
+            let promiseHello=new Promise((resolve,reject)=>{
+                // setTimeout(()=>resolve("This is resolve again"),2000)
+                setTimeOut(()=>reject("This is rejected again"),2000)
+            })
+            try{
+                // let MyPromise=await promiseHello 
+                document.getElementById("dem").innerHTML=await promiseHello;
+            }
+            catch{
+                document.getElementById("dem").innerHTML="Some error"
+            }
+           
+        }
+        myfunc()
+    </script>
+</body>
+</html>

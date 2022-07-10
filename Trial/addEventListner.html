@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <input type="text" id="demo" placeholder="type something">
+        <button id="btn">click me</button>
+         <ul id="temp">
+         
+         </ul>
+        </div>
+     <script>
+        let inp=document.getElementById("demo")
+        let btn=document.getElementById("btn")
+        let list=document.getElementById("temp")
+
+        btn.addEventListener("click",()=>{
+            let element=document.createElement("li")
+            element.innerText=inp.value;
+            list.appendChild(element)
+            inp.value=""
+            inp.focus()
+        })
+     </script>
+</body>
+</html>

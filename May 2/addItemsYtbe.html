@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #demo{
+            list-style: none;
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2 class="heading" style="color: Blue;">This is the heading of this session</h2>
+        <div class="temp">
+            <input type="text" placeholder="Type something here" id="demp">
+            <button id="btn">Add Items</button>
+        </div>
+        <ul id="demo">
+           
+        </ul>
+
+    </div>
+    <script>
+        let inp=document.getElementById("demp")
+        let btn=document.getElementById("btn")
+        let temp=document.getElementById("demo")
+        
+        btn.addEventListener("click",()=>{
+           var element=document.createElement("li")
+           element.innerText=inp.value;
+           
+           element.style.color="red"
+           temp.appendChild(element)
+           inp.value=" "
+           inp.focus();
+        })
+        console.log(arr)
+      
+    </script>
+</body>
+</html>

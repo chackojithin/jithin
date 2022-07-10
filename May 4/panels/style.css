@@ -1,0 +1,68 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family:"Muli",sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+}
+.container{
+    display: flex;
+    width: 200vh;
+}
+.panel1{
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 80vh;
+    border-radius: 50px;
+    color: white;
+    cursor: pointer;
+    margin: 10px;
+    position: relative;
+    flex: 0.5;
+    transition: all 700ms ease-in;
+}
+.panel1 h3{
+    font-size: 25px;
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    margin: 0;
+    opacity: 0;
+}
+.panel1.active{
+    flex: 5;
+} 
+.panel1.active h3{
+    opacity: 1;
+    transition: 0.3s ease-in o.4s;
+}
+@media (max-width: 100px){
+    .container{
+        width: 100vh;
+    }
+    #panel-4,#panel-5{
+        display: none;
+    }
+}
+
+#panel-1{
+    background-image: url(https://uniquephoto.azureedge.net/resources/uniquephoto/images/blog/2014/12/Ken-Kaminesky.jpg);
+
+}
+#panel-2{
+    background-image: url(https://images.unsplash.com/photo-1516571137133-1be29e37143a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8d2lsZCUyMGZvcmVzdHxlbnwwfHwwfHw%3D&w=1000&q=80);
+
+}#panel-3{
+    background-image: url(https://images.trvl-media.com/hotels/36000000/35150000/35148800/35148733/b4715dee.jpg?impolicy=resizecrop&rw=500&ra=fit);
+
+}#panel-4{
+    background-image: url(https://cdn.wallpapersafari.com/13/2/p6yvtJ.jpg);
+
+}#panel-5{
+    background-image: url(https://ars.els-cdn.com/content/image/1-s2.0-B9780123742667000019-f01-26-9780123742667.jpg);
+}

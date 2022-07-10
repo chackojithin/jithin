@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 style="color: Red;" id="dem"></h1>
+    <h2 id="temp"></h2>
+    <button id="btn" value="Stop" onclick="func()">Stop</button>
+    <script>
+        function myfunc(){
+            console.log("jithin")
+        }
+        myfunc()
+
+        function myfunc1(){
+            console.log("jithin")
+        }
+        setTimeout(myfunc1,5000)
+
+        setTimeout(()=>{
+            console.log(54)
+        },3000)
+
+        var i=0;
+        function count(){
+            i++
+            console.log(i)
+            let myTimeout=setTimeout(count,1000)
+            if(i==6){
+                clearTimeout(myTimeout)
+            }
+        }
+       a=setTimeout(count,1000)  
+
+    //    setTimeout(()=>{
+    //      var win1=window.open();
+    //      win1.document.write("<h2>Welocome To Js</h2")
+    //         setTimeout(()=>{
+    //             win1.close()
+    //         },2000)
+    //    },2000)
+
+//    var i=0;
+//     var kh=setInterval(function(){
+//         document.write("Hello")
+//         i++
+//         if(i>10){
+//            clearInterval(kh)
+//         }
+//     },100)
+
+    //    setInterval(()=>{
+    //       document.write("*")
+    //    },1000)
+    
+
+    // j=0
+    
+  //-------1
+//      function abc(){
+//         document.write("#")
+//         setTimeout(function(){
+//             abc()
+//         },500)
+      
+
+//       }
+//    setTimeout(abc,1000)
+  //------------2
+    //    function abc(){
+    //        setTimeout(function(){
+    //           document.write("*")
+    //           abc()
+    //        },500)
+          
+    //    }
+    //    setTimeout(abc,1000)
+
+   //----------3
+    //    j=0
+    //    function abcd(){
+    //        j++;  
+    //       document.write("#")
+    //       setTimeout(abcd,500)
+          
+    //    }
+    //    setTimeout(abcd,1000)
+    //----------4
+    // function abc(){
+    //     setTimeout(display,500)
+    //     function display(){
+    //         document.write("*")
+    //         abc()
+    //     }
+    // }
+    // abc()
+
+    // function myfunc(){
+    //     setInterval(() => {
+    //         document.write("*")
+    //     }, 500);
+    // }
+
+  
+
+    </script>
+</body>
+</html>
