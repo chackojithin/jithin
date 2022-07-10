@@ -2,8 +2,7 @@ const display=document.getElementById("display")
 const btns=document.querySelectorAll(".btn")
 display.style.color="red"
 btns.forEach(btn=>{
-   
-    btn.addEventListener("click",()=>{
+   btn.addEventListener("click",()=>{
        if(btn.innerText==='C'){
             display.innerText="";
         }else if(btn.innerText==='←'){
@@ -19,6 +18,7 @@ btns.forEach(btn=>{
         }
     })
 })
+
 
 // function buttonClick(btn){
 //     btn.addEventListener("click",()=>{
