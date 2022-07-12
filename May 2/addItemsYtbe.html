@@ -27,14 +27,14 @@
     <script>
         let inp=document.getElementById("demp")
         let btn=document.getElementById("btn")
-        let temp=document.getElementById("demo")
+        let curr=document.getElementById("demo")
         
         btn.addEventListener("click",()=>{
            var element=document.createElement("li")
            element.innerText=inp.value;
            
            element.style.color="red"
-           temp.appendChild(element)
+           curr.appendChild(element)
            inp.value=" "
            inp.focus();
         })
