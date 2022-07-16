@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <button id="btn1">clik me</button>
+        <button id="btn2">change color</button>
+        <h1 id="temp"></h1>
+
+        <input type="text" id="text">
+        <button id="btn3">Add items</button>
+
+        <ul id="demo">
+           
+        </ul>
+    </div>
+
+    
+
+    <script>
+        const btn1=document.getElementById("btn1");
+        const btn2=document.getElementById("btn2");
+        const disp=document.getElementById("temp")
+        const inp=document.getElementById("text")
+        const btn3=document.getElementById("btn3")
+        const list=document.getElementById("demo")
+
+        btn1.addEventListener("click",myfunc)
+        function myfunc(){
+            disp.innerHTML="Jithin chacko"
+        }
+        btn2.addEventListener("click",()=>{
+            disp.style.color="green"
+        })
+        btn3.addEventListener("click",()=>{
+           const element=document.createElement("li")
+              element.classList.add("demp")
+              element.innerText=inp.value;
+              list.appendChild(element)
+              inp.value=" "
+              inp.focus();
+
+        })
+
+
+
+    </script>
+</body>
+</html>
