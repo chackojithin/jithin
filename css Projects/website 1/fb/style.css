@@ -1,0 +1,49 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    padding: 0;
+}
+.header{
+    background-color: blue;
+    width: 100vw;
+    height: 10vh;
+}
+.logo{
+    width: 50vw;
+    float: left;
+    padding-top: 20px;
+  }
+.login{
+    width: 50vw;
+    float: left;
+    padding-left: 150px;
+    color: white;
+
+}
+.logo-content{
+    text-decoration: none;
+    color: white;
+    font-size: 40px;
+    padding-left: 135px;
+   
+    
+}
+.left-section{
+  width: 50vw;
+  /* float: right; */
+}
+.right-section{
+  width: 50vw;
+  float: right;
+}
+.para1{
+    font-size: 20px;
+    font-weight: bold;
+    padding-left: 80px;
+    padding-top: 40px;
+}
+.img{
+    padding-left: 100px;
+}
