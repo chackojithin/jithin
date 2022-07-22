@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <ul id="postList">
+
+    </ul>
+    <script>
+        // function a(callback){
+        //     console.log("inside funtion a")
+        //     callback()
+        // }
+        // function b(){
+        //     console.log("inside function b")
+        // }
+        // a(b)
+
+        // a(function(){
+        //     console.log("test function")
+        // });
+
+        // a(()=>{
+        //     console.log("test function 1")
+        // })
+
+        // a(myfunc)
+         
+        // function myfunc(){
+        //     console.log("this is robin radhakrishnan")
+        // }
+
+        const posts=[
+            {id:1,title:"introduction"},
+            {id:2,title:"chapter 1"}
+        ]
+        const getPosts= ()=>{
+           let lis =''
+           setTimeout(()=>{
+            posts.forEach(post=>{
+                lis+=`<li> ${post.id}-${post.title}</li>`
+            })
+            document.getElementById("postList").innerHTML=lis;
+           },1000)
+        }
+
+        const addPosts=(post,callback)=>{
+            setTimeout(()=>{
+               posts.push(post)
+               callback();
+
+            },2000)
+        }
+        addPosts({id:3,title:"Chapter 3"},getPosts)
+        // getPosts()
+
+     
+    </script>
+</body>
+</html>

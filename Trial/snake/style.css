@@ -1,0 +1,6 @@
+h1,.container{
+    text-align: center;
+}
+#score,#game-status{
+    color: red;
+}
