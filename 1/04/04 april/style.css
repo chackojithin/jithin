@@ -1,0 +1,22 @@
+table{
+    border: 1px solid ;
+    /* border-collapse: collapse; */
+    text-align: center;
+   
+}
+h1{
+    color: red;
+}
+th,td{
+    padding: 10px;
+    border: 1px solid ;
+    border-collapse: collapse;
+    text-align: center;
+}
+th{
+    background-color: aqua;
+    
+}
+td{
+    background-color: beige;
+}
