@@ -54,7 +54,7 @@ function mainGame(){
         ctx.moveTo(0,rl)
         ctx.lineTo(400,rl)
     }
-    ctx.strokeStyle='black'
+    ctx.strokeStyle='grey'
     ctx.stroke()
 
     ctx.fillStyle="white"
@@ -75,7 +75,7 @@ function mainGame(){
     //if snake eat fruit
     if(sPosx === fPosx && sPosy === fPosy){
         snakeSize++;
-        score+=10;
+        score+=5;
         fPosx=Math.floor(Math.random()*20)*20
         fPosy=Math.floor(Math.random()*20)*20
     }
