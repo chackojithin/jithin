@@ -7,9 +7,10 @@
     text-align: right;
     height: 70px;
     line-height: 70px;
-    padding: 1;
+    padding:1 ;
     font-size: 25px;
     padding-right:10px ;
+    margin-right: 10px;
     
 }
 .buttons{
